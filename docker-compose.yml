@@ -40,7 +40,7 @@ services:
       - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       
   search-module:
-    image: mangeshkashid/mangesh-docker1
+    image: mangeshkashid/mangesh-docker
     depends_on:
       - chrome
       - firefox

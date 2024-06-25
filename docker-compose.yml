@@ -49,4 +49,4 @@ services:
       - BROWSER=chrome
       - MODULE=testng.xml
     volumes:
-      - ./GRID_ResultOutput:./test-output
+      - ./output:C:/Project/GemResource/test-output

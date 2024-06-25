@@ -69,4 +69,4 @@ services:
       - BROWSER=chrome
       - MODULE=testng.xml
     volumes:
-      - ./output:/Project/GemResource/test-output
+      - ./output/result:/Project/GemResource/test-output

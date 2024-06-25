@@ -45,7 +45,7 @@ services:
       - chrome
       - firefox
     environment:
-      - HUB_HOST=hub
+      - HUB_HOST=selenium-hub
       - BROWSER=chrome
       - MODULE=testng.xml
     volumes:

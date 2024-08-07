@@ -3,17 +3,17 @@ pipeline{
 	stages{
 		stage("Pull Latest Image"){
 			steps{
-				bat "docker pull mangeshkashid/mangesh-docker"
+				sh "docker pull mangeshkashid/mangesh-docker"
 				}
 			}
 		stage("Start Grid"){
 			steps{
-				bat "docker-compose up -d selenium-hub chrome chrome1 chrome2 firefox"
+				sh "docker-compose up -d selenium-hub chrome chrome1 chrome2 firefox"
 				}
 			}
 		stage("Run Test"){
 			steps{				
-				bat "docker-compose up search-module"
+				sh "docker-compose up search-module"
 				}
 			}
 		}
